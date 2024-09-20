@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--Nombre de la pagina-->
+        <h1>Tribu de alma legendaria</h1>
+    </header>
+    
+    <nav>
+        <!-- botones para entrelazar mos menus principales de la pagina-->
+        <a href="inicio.html"><button class="buttonoscuro">Inicio</button></a> 
+        <a href="Amigo.html"><button class="buttonoscuro">El Amigo Secreto</button></a>  
+        <a href="invitado especial.html"><button class="buttonoscuro">Invitado especial</button></a> 
+        
+    </nav>
+        
+    <main>    
+        <div>
+            <a href="Amigo.html"><button  class="buttonoscuro2">Tribu ejemplo</button></a> 
+            <a href="manuel.html"><button class="buttonoscuro2">Manuel</button></a> 
+            <a href="adolfo.html"><button class="buttonoscuro2">Adolfo</button></a>  
+            <a href="diana_m.html"><button class="buttonoscuro2">Diana M</button></a> 
+            <a href="diana_b.html"><button class="buttonoscuro2">Diana B</button></a> 
+            <a href="janny.html"><button class="buttonoscuro2">Janny</button></a> 
+            <a href="shafally.html"><button class="buttonoscuro2">Shafally</button></a> 
+            <a href="tatiana.html"><button class="buttonoscuro2">Tatiana</button></a> 
+            <a href="sergio.html"><button class="buttonoscuro2">Sergio</button></a> 
+            <a href="jhonier.html"><button class="buttonoscuro2">Jhonier</button></a> 
+            <a href="jaser.html"><button class="buttonoscuro2">Jaser</button></a> 
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+           
+        </div>
+
+            <section>
+                <h1>Pista No 1</h1>
+              
+                <div>
+                    
+                     <button class="buttonoscuro3" id="descubrirBoton">Descubrir</button>
+                </div>
+                
+                 
+                <div class="image-container" alt="imagen comida">
+                    <img id="imagenOculta" src="imagen comida/comida_tatiana.jpeg" alt="Imagen Oculta">         
+                </div>
+                
+                <script>
+                // Función para mostrar la imagen oculta
+                document.getElementById("descubrirBoton").addEventListener("click", function() {
+                var imagen = document.getElementById("imagenOculta");
+                imagen.style.display = "block"; // Mostrar la imagen
+                });
+                </script>
+                
+            </section>
+
+            <section>
+                    <h1>Pista No 2</h1>
+                    <button class="buttonoscuro3" id="descubrirBoton2">Descubrir</button>
+                    <div>
+                        <audio id="miAudio" class="miAudio" alt="cancion">
+                            <source src="cancion/cancion_tatiana.mp3" type="audio/mp3">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    
+                    <script>
+                        // Función para mostrar el audio oculto
+                        document.getElementById("descubrirBoton2").addEventListener("click", function() {
+                            var audio = document.getElementById("miAudio");
+                            audio.controls = true; // Mostrar los controles del audio
+                            audio.style.display = "block"; // Asegurarse de que sea visible
+                        });
+                    </script> 
+                </section>
+
+                <section>
+                    <h1>Pista No 3</h1>
+                    <div>
+                        <button class="buttonoscuro3" id="descubrirBoton3" alt="imagen pista">Descubrir</button>
+                    </div>
+                    <div class="image-container" alt="foto identifica al amigo secreto">
+                        <img id="imagenOculta3" src="imagen pista/pista_tatiana.jfif" alt="imagenOculta">
+                    </div>
+
+                    <script>
+                        // Función para mostrar la imagen oculta
+                        document.getElementById("descubrirBoton3").addEventListener("click", function() {
+                        var imagen = document.getElementById("imagenOculta3");
+                        imagen.style.display = "block"; // Mostrar la imagen
+                        });
+                        </script>
+                </section>
+                
+             <section >
+                <h1>Pista No 4</h1>
+                 <button class="buttonoscuro3"  id="descubrirBoton4">Descubrir</button>
+                <div class="descripcion" alt="descipcion del amigo secreto">
+                    <p id="descripcionOculta">Mi amigo secreto duerme pocas horas , madruga mucho , desayuna poco y trabaja hasta los festivos , si pensamos la inicial de unos de nombres es dulce como la macadamia y en su apellido hay un gusto de Agua , su sedentarismo no es monótomo aunque no es fit pero es fit , su cabellera larga es fenomenal y brilla como el sol , quien es ?</p>
+                </div>
+                <script>
+                    // Función para mostrar el párrafo oculto de Pista No 4
+                    document.getElementById("descubrirBoton4").addEventListener("click", function() {
+                        var parrafo = document.getElementById("descripcionOculta");
+                        parrafo.style.display = "block"; // Mostrar el párrafo
+                    });
+                </script>
+            </section>
+
+            <section class="tesoro">
+                <h1>Introduce la contraseña para recibir tu regalo</h1>
+
+                <!-- Campo para ingresar la contraseña -->
+                <input type="password" id="password" placeholder="Introduce la contraseña" />
+
+                <!-- Botón para validar la contraseña -->
+                <button onclick="validarContraseña()">Enviar</button>
+
+                <!-- Contenedor del mensaje oculto -->
+                <div id="mensaje" style="display: none;">
+                    <h2 id="h2section4">¡Contraseña correcta!</h2>
+                    <p id="psection4">Amigo secreto, las palabras no me sobran pero estas son las necesarias y suficientes  para expresar lo que pienso, siento y creo , desde hace un tiempo he encontrado en Ud la terneza y el valor de persona que es , lo cual me ha llevado a reflexionar  y cambiar la expectativa que tenía  , no es perfecto y su valor como ser humano lo hace  excepcional , Gracias por su gran aporte como lider y como persona, un abrazo y muchas bendiciones es mi  deseo !</p>
+                </div>
+
+                <script>
+                    // Función para validar la contraseña
+                    function validarContraseña() {
+                    // Contraseña correcta predefinida
+                    var contraseñaCorrecta = "mapache";
+
+                    // Obtener el valor ingresado en el campo de contraseña
+                    var contraseñaIngresada = document.getElementById("password").value;
+
+                    // Comparar la contraseña ingresada con la correcta
+                    if (contraseñaIngresada === contraseñaCorrecta) {
+                        // Mostrar el mensaje oculto si la contraseña es correcta
+                        document.getElementById("mensaje").style.display = "block";
+                    } else {
+                        // En caso de contraseña incorrecta, mostrar una alerta
+                        alert("Contraseña incorrecta. Inténtalo de nuevo.");
+                    }
+                }
+                </script>
+            </section>
+        
+    </main>     
+</body>
+
+</html>

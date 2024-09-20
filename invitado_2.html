@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitado 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--Nombre de la pagina-->
+        <h1>Tribu de alma legendaria</h1>
+    </header>
+    
+    <nav>
+        <!-- botones para entrelazar mos menus principales de la pagina-->
+        <a href="inicio.html"><button class="buttonoscuro">Inicio</button></a> 
+        <a href="Amigo.html"><button class="buttonoscuro">El Amigo Secreto</button></a>  
+        <a href="invitado especial.html"><button class="buttonoscuro">Invitado especial</button></a> 
+        
+    </nav>
+        
+    <main>    
+        <div>
+            <a href="invitado especial.html"><button  class="buttonoscuro2">Adivina ejemplo</button></a> 
+            <a href="invitado_1.html"><button class="buttonoscuro2">Invitado 1</button></a> 
+            <a href="invitado_2.html"><button class="buttonoscuro2">Invitado 2</button></a>  
+            <a href="invitado_3.html"><button class="buttonoscuro2">Invitado 3</button></a> 
+            <a href="invitado_4.html"><button class="buttonoscuro2">Invitado 4</button></a> 
+            <a href="invitado_5.html"><button class="buttonoscuro2">Invitado 5</button></a> 
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+            <a ><button class="buttonerror"></button></a> <!--este boton error toco que colocarlo para que la seccion de section no invadiera el campo derecho sin usar del menu botones asesores-->
+        </div>
+
+            <section>
+                <h1>Pista No 1</h1>
+              
+                <div>
+                    
+                     <button class="buttonoscuro3" id="descubrirBoton">Descubrir</button>
+                </div>
+                
+                 
+                <div class="image-container" alt="imagen comida">
+                    <img id="imagenOculta" src="imagen comida/comida_gustavo.jpg" alt="Imagen Oculta">         
+                </div>
+                
+                <script>
+                // Función para mostrar la imagen oculta
+                document.getElementById("descubrirBoton").addEventListener("click", function() {
+                var imagen = document.getElementById("imagenOculta");
+                imagen.style.display = "block"; // Mostrar la imagen
+                });
+                </script>
+                
+            </section>
+
+            <section>
+                    <h1>Pista No 2</h1>
+                    <button class="buttonoscuro3" id="descubrirBoton2">Descubrir</button>
+                    <div>
+                        <audio id="miAudio" class="miAudio" alt="cancion">
+                            <source src="cancion/cancion_gustavo.mp3" type="audio/mp3">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    
+                    <script>
+                        // Función para mostrar el audio oculto
+                        document.getElementById("descubrirBoton2").addEventListener("click", function() {
+                            var audio = document.getElementById("miAudio");
+                            audio.controls = true; // Mostrar los controles del audio
+                            audio.style.display = "block"; // Asegurarse de que sea visible
+                        });
+                    </script> 
+                </section>
+
+                <section>
+                    <h1>Pista No 3</h1>
+                    <div>
+                        <button class="buttonoscuro3" id="descubrirBoton3" alt="imagen pista">Descubrir</button>
+                    </div>
+                    <div class="image-container" alt="foto identifica al amigo secreto">
+                        <img id="imagenOculta3" src="imagen pista/pista_gustavo.jpg" alt="imagenOculta">
+                    </div>
+
+                    <script>
+                        // Función para mostrar la imagen oculta
+                        document.getElementById("descubrirBoton3").addEventListener("click", function() {
+                        var imagen = document.getElementById("imagenOculta3");
+                        imagen.style.display = "block"; // Mostrar la imagen
+                        });
+                        </script>
+                </section>
+                
+             <section >
+                <h1>Pista No 4</h1>
+                 <button class="buttonoscuro3"  id="descubrirBoton4">Descubrir</button>
+                <div class="descripcion" alt="descipcion del amigo secreto">
+                    <p id="descripcionOculta"> Es una persona amable, alegre, le gusta la diversión y la parranda, es el terror de muchas otras personas.</p>
+                </div>
+                <script>
+                    // Función para mostrar el párrafo oculto de Pista No 4
+                    document.getElementById("descubrirBoton4").addEventListener("click", function() {
+                        var parrafo = document.getElementById("descripcionOculta");
+                        parrafo.style.display = "block"; // Mostrar el párrafo
+                    });
+                </script>
+            </section>
+
+          
+            <section class="tesoro">
+                <h1>Introduce la contraseña para ver tu regalo</h1>
+
+                <!-- Campo para ingresar la contraseña -->
+                <input type="password" id="password" placeholder="Introduce la contraseña" />
+
+                <!-- Botón para validar la contraseña -->
+                <button onclick="validarContraseña()">Enviar</button>
+
+                <!-- Contenedor del mensaje oculto -->
+                <div id="mensaje" style="display: none;">
+                    <h2 id="h2section4">¡Contraseña correcta!</h2>
+                    <p id="psection4">Gracias por el apoyo que nos brindaste cuando hiciste parte de este Equipo, pero sobre todo gracias por que la amistad sigue permaneciendo, te queremos y deseamos que tu matrimonio siga consolidando tu relación de pareja.</p>
+                </div>
+
+                <script>
+                    // Función para validar la contraseña
+                    function validarContraseña() {
+                    // Contraseña correcta predefinida
+                    var contraseñaCorrecta = "gustavo";
+
+                    // Obtener el valor ingresado en el campo de contraseña
+                    var contraseñaIngresada = document.getElementById("password").value;
+
+                    // Comparar la contraseña ingresada con la correcta
+                    if (contraseñaIngresada === contraseñaCorrecta) {
+                        // Mostrar el mensaje oculto si la contraseña es correcta
+                        document.getElementById("mensaje").style.display = "block";
+                    } else {
+                        // En caso de contraseña incorrecta, mostrar una alerta
+                        alert("Contraseña incorrecta. Inténtalo de nuevo.");
+                    }
+                }
+                </script>
+                
+            </section>
+        
+    </main>     
+</body>
+
+</html>

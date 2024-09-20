@@ -1,0 +1,214 @@
+/*color de la pagina web*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 168, 208);
+    color: rgb(199, 37, 62); 
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+background-color:rgb(133, 15, 141); /* Color de fondo del título */
+color: white; /* Color del texto */
+text-align: center; /* Centra el texto horizontalmente */
+font-size: 3vw; /* Ajusta el tamaño del texto */
+height: auto;
+padding: 5px ; /* Relleno vertical del título */
+margin: 0px; /* Elimina el margen por defecto  */
+border: 0px;/* Elimina el borde por defecto */
+}
+
+nav{
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 2px; /* Reduce la distancia entre el título y los botones */
+   }
+
+   /* Estilos para el contenido principal */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    padding: 20px;
+    background-color:  rgb(240, 168, 208);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.buttonoscuro{
+    background-color: rgb(199, 56, 189);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease; /*permite el cambio de color al pasar el clik por encima delboton */
+    border: none; /* Sin borde */
+    padding: 15px 32px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    margin: 8px; /* Espaciado exterior */
+    font-size: 2vh; /* 12% del ancho de la ventana */
+    align align-items: center;
+    }
+
+.buttonoscuro:hover {
+    background-color: rgb(220, 0, 131);
+    color: white;
+}
+
+
+.buttonoscuro2 {
+    background-color: rgb(220, 0, 131);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease; /*permite el cambio de color al pasar el clik por encima delboton */
+    border: none; /* Sin borde */
+    padding: 15px 32px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    margin: 10px; /* Espaciado exterior */
+    font-size: 2vh; /* 12% del ancho de la ventana */
+    align align-items: center;
+}
+
+.buttonoscuro2:hover {
+    background-color: rgb(199, 56, 189);
+    color: white;
+}
+
+.buttonoscuro3 {
+    background-color:rgb(103, 63, 105);
+    display: flex;;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease; /*permite el cambio de color al pasar el clik por encima delboton */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    margin: 10px; /* Espaciado exterior */
+    font-size: 1em; /* el ancho de la ventana */
+    align align-items: center;
+        
+}
+
+.buttonoscuro3:hover {
+    background-color: rgb(199, 56, 189);
+    color: white;
+}
+
+.buttonerror {
+    background-color:rgb(240, 168, 208);
+    display: flex;;
+    color:rgb(240, 168, 208);
+    cursor: pointer;
+    transition: 0.3s ease; /*permite el cambio de color al pasar el clik por encima delboton */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    margin: 10px; /* Espaciado exterior */
+    font-size: 1em; /* el ancho de la ventana */
+    align align-items: center;
+}
+
+section {
+    background-color: rgb(255, 235, 212);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px; /* Ancho relativo para pantallas grandes */
+    margin: 10px 0;
+    text-align: center;
+    font-size: 2em; /* el ancho de la ventana */
+    overflow: hidden; /* oculta lo que se sale */
+    position: relative;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.tesoro {
+    width: 700px; /* Ancho relativo para pantallas grandes */
+}
+.mensaje {
+    font-size: 3em;
+}
+
+
+#descripcionOculta{
+    display: none;
+    color:  rgb(133, 15, 141);
+}
+
+/* Estilo básico para la imagen */
+.image-container img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
+    /*display: block; este error era el que no hacia funcionar correctamente el script /* Elimina el espacio extra debajo de la imagen */
+    display:none /*permite que al cargar la pagina la imagen no se muestre*/
+   
+}
+
+.miAudio{
+    display:none /*permite que al cargar la pagina la imagen no se muestre*/
+}
+
+#psection4{
+    color: rgb(133, 15, 141);
+}
+
+#h2section4{
+    color:  rgb(199, 56, 189);
+}
+
+#p1{
+    color: rgb(133, 15, 141);  
+}
+
+#p5{
+    color: rgb(133, 15, 141);  
+}
+
+#invitadop1{
+    color: rgb(133, 15, 141);  
+}
+
+#invitadop5{
+    color: rgb(133, 15, 141);  
+}
+
+/* Media Queries para hacer la página responsive */
+
+/* Para pantallas de tablets y dispositivos medianos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    section {
+        width: 100%; /* Las secciones ocupan todo el ancho en pantallas medianas */
+        padding: 15px;
+    }
+}
+
+/* Para pantallas de móviles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.9rem; /* Tamaño de texto más pequeño para pantallas pequeñas */
+    }
+}
